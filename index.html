@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+                
+<div class="payment-page">
+    <div class="payment-page-margin">
+        <div class="payment-page-header">
+<div class="payment-logo">
+<img src="images/PayUbiz_logo.png">
+</div>
+        </div>
+        <div class="payment-page-value">
+            <p>AMOUNT Rs : <span>1,200</span></p>
+            <p>Transcation Id : <span>TXCHSTEDJD001</span></p>
+        </div>
+        <div class="payment-page-type">
+            <p>Choose a Payment Method</p>
+            <div>
+                <img src="images/payumoney.png">
+            </div>
+        </div>
+        <div class="payment-method-selection">
+            <div class="payment-method-selectio-sec-1">
+                <ul>
+                    <li class="active" name="card">Credit Card</li>
+                    <li name="card">Debit Card</li>
+                    <li name="card">Debit Card(ATM PIN)</li>
+                    <li>Net Banking</li>
+                    <li>TEZ</li>
+                    <li name="UPI">UPI</li>
+                    <li>Sodexo</li>
+                </ul>
+            </div>
+            <div class="payment-method-selectio-sec-2">
+                <div class="payment-method-selectio-sec-2-margin">
+                    <div class="credit-card" name="card">
+                    <div class="payment-sec-2-con-1" >
+                        <p>Card Type</p>
+                        <ul>
+                            <li>
+                                <input type="radio" name="card" id="card1"> <label for="card1"><img src="images/visa.png"></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="card" id="card2"> <label for="card2"><img src="images/american.png"></label>
+                            </li>
+                            <li>
+                                <input type="radio" name="card" id="card1"> <label for="card1"><img src="images/visa.png"></label>
+                            </li>
+                    
+                        </ul>
+                    </div>
+                    <div class="payment-sec-2-con-2" >
+                 <div class="payment-sec-2-con-2-left">
+                    <p>Card Number</p>
+                    <p>Name on the Card</p>
+                    <p>CVV Number</p>
+                    <p>Expiry Date</p>
+                 </div>
+                 <div class="payment-sec-2-con-2-right">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <div>
+                        <input type="month">
+                        <input type="year">
+                    </div>
+                 </div>
+                </div>
+                <div class="payment-note">
+                    <p><span>Note :</span> In the next Step You Will be Redirect to Your bank's Website</p>
+                </div>
+                <div class="payment-button">
+                   <button>
+                    Pay Now
+                   </button>
+                   <p>or <span>Click here to go back</span></p>
+                </div>
+            </div>
+<div class="upi" name="UPI">
+    <div class="upi-margin">
+        <div class="upi-con-1">
+            <p>UPI/BHIM</p>
+            <p>Change</p>
+        </div>
+        <div class="upi-con-2">
+
+            <div class="upi-sec">
+            
+                <div class="upi-type-selection">
+                    <p>Select Your UPI App</p>
+            <div class="upi-flex">
+                <div class="upi-flex-1">
+                    <img src="images/upi/img1.png">
+                </div>
+                <div class="upi-flex-1">
+                    <img src="images/upi/img2.png">
+                </div>
+                <div class="upi-flex-1">
+                    <img src="images/upi/img3.png">
+                </div>
+                <div class="upi-flex-1">
+                    <img src="images/upi/img4.png">
+                </div>
+            </div>
+        </div>
+        <div class="upi-payment">
+            <div class="upi-payment-sec-1">
+                <p>Select an Option to Pay</p>
+                <p>Rs <span>411</span></p>
+            </div>
+            <div class="upi-payment-sec-2">
+<div>
+    <p>Pay With Paytm</p>
+    <p>Pay Using UPI</p>
+</div>
+<div>
+    <ul>
+        <li>
+            <i class="fa-solid fa-calendar"></i>
+            <p>PostPaid</p>
+        </li>
+        <li>
+            <i class="fa-solid fa-wallet"></i>
+            <p>PostPaid</p>
+        </li>
+        <li>
+            <i class="fa-solid fa-credit-card"></i>
+            <p>PostPaid</p>
+        </li>
+    </ul>
+</div>
+<div>
+    <p>Enter Mobile Number</p>
+    <input type="number" id="mobile">
+    <p id="makeVerify">* Make Verify Mobile Number</p>
+</div>
+            </div>
+        </div>
+
+        </div>
+            <button id="upipayNow">PAY NOW</button>
+            <p>How To Pay Using UPI ?</p>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="bill-div">
+           
+            <div class="bill-div-margin">
+                <div class="bill-div-close">
+                    X
+                </div>
+                <div class="bill-container">
+                    <div class="bill-title">
+<p>POS</p>
+<P>LOGO</P>
+                    </div>
+                    <div class="bill-address">
+                        <p>48,Anna Salai MainRoad,Saligramam <br> Chennai, 600002 <br> TAMILNADU, Contact : +91 95433 87564</p>
+                        <p><span>DATE</span> : <span>12/12/2022</span> <br> <span>INVOICE#</span> <span>100</span></p>
+                    </div>
+                    <div class="bill-to">
+                        <div class="bill-to-left">
+<p>BILL TO :</p>
+<div>
+    <p >Customer Name :</p>
+    <input id="customerName" type="text" placeholder="Custmer Name">
+</div>
+<p>No Of Person : <span>3</span></p>
+                        </div>
+                        <div class="bill-to-right">
+                            <p>Time : <span>04:35 AM</span></p>
+                            <p>Server Name : <span>MOHAN</span></p>
+                        </div>
+                    </div>
+                    <div class="bill-list-container">
+                        <h2>WELCOME TO RESTAURANT</h2>
+                        <div class="bill-list-items">
+                            <table border="1" class="billtable">
+                                <thead>
+                                    <th>S.No</th>
+                                    <th>Items</th>
+                                    <th>Qty</th>
+                                    <th>Rate</th>
+                                    <th>Amount</th>
+                                </thead>
+                                <tbody class="bill-counts">
+                            
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4">SUB TOTAL</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">TAX RATE</td>
+                                    <td>2%</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">SALES TAX</td>
+                                    <td>26</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">OTHER</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">TOTAL</td>
+                                    <td>0</td>
+                                </tr>
+                             
+                            </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bill-payment-method">
+<p>Choose Payment Method</p>
+<div class="payment-container">
+    <div class="payment-card1" type="card">
+        <img src="images/card.png">
+        <div class="tick">
+            <i class="fa-solid fa-check"></i>
+        </div>
+    </div>
+    <div class="payment-card1" type="upi">
+<img src="images/phone.png">
+<div class="tick">
+    <i class="fa-solid fa-check"></i>
+</div>
+    </div>
+    <div class="payment-card1" type>
+<h1>CASH</h1>
+<div class="tick">
+    <i class="fa-solid fa-check"></i>
+</div>
+    </div>
+    
+</div>
+<p class="payment-method-error">Select Payment Method</p>
+                    </div>
+                    <div class="bill-payment-button">
+                        <button class="make-payment">Make Payment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <header>
+        <div class="logo">
+            <h1 id="pos">POS FOOD</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="search food here">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="profile">
+            <ul>
+                <li>
+                    Today Order <span>10</span>
+                </li>
+                <li>
+                  Name 
+                </li>
+                <li><i class="fa-solid fa-user"></i></li>
+            </ul>
+        </div>
+    </header>
+   
+    <div class="sec">
+        <div class="sec-left">
+            <div class="navigation">
+                <nav>
+                    <ul>
+                        <li><p>TABLE</p></li>
+                        <li><p>TIFFEN</p></li>
+                        <li><p>LUNCH</p></li>
+                        <li><p>SUMMARY</p></li>
+                    
+                    </ul>
+                </nav>
+            </div>
+            <div class="sec-left-con">
+                <div class="table-sec" name="TABLE">
+                    <div class="table-margin">
+                    <div class="table-1"><h1>TABLE - 1</h1></div>
+                    <div class="table-1"><h1>TABLE - 2</h1></div>
+                    <div class="table-1"><h1>TABLE - 3</h1></div>
+                    <div class="table-1"><h1>TABLE - 4</h1></div>
+                    <div class="table-1"><h1>TABLE - </h1></div>
+                    </div>
+                </div>
+                <div class="tiffen-sec" name="TIFFEN">
+                    <h1>TIFFEN</h1>
+                    <div class="tiffen-card-margin">
+                        <div class="tiifen-flex">
+                            <div class="tiffen-card-1" draggable="true">
+                                <div class="tiffen-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="tiffen-card-con">
+<h3>Burger Burger</h3>
+<div class="tiffen-card-rate">
+    <p><span>RS</span> <span>149</span></p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div>
+                            <div class="tiffen-card-1">
+                                <div class="tiffen-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="tiffen-card-con">
+<h3>Burger Burger</h3>
+<div class="tiffen-card-rate">
+    <p><span>RS</span> <span>149</span></p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div>
+                            <div class="tiffen-card-1">
+                                <div class="tiffen-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="tiffen-card-con">
+<h3>Burger Burger</h3>
+<div class="tiffen-card-rate">
+    <p><span>RS</span> <span>149</span></p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div>
+                            <div class="tiffen-card-1">
+                                <div class="tiffen-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="tiffen-card-con">
+<h3>Burger Burger</h3>
+<div class="tiffen-card-rate">
+    <p><span>RS</span> <span>149</span></p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div>
+                            <div class="tiffen-card-1">
+                                <div class="tiffen-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="tiffen-card-con">
+<h3>Burger Burger</h3>
+<div class="tiffen-card-rate">
+    <p><span>RS</span> <span>149</span></p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div>
+                            <div class="tiffen-card-1">
+                                <div class="tiffen-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="tiffen-card-con">
+<h3>Burger Burger</h3>
+<div class="tiffen-card-rate">
+    <p><span>RS</span> <span>149</span></p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div>
+                            <div class="tiffen-card-1">
+                                <div class="tiffen-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="tiffen-card-con">
+<h3>Burger Burger</h3>
+<div class="tiffen-card-rate">
+    <p><span>RS</span> <span>149</span></p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div>
+                            <div class="tiffen-card-1">
+                                <div class="tiffen-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="tiffen-card-con">
+<h3>Burger Burger</h3>
+<div class="tiffen-card-rate">
+    <p><span>RS</span> <span>149</span></p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div>
+                            <div class="tiffen-card-1">
+                                <div class="tiffen-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="tiffen-card-con">
+<h3>Burger Burger</h3>
+<div class="tiffen-card-rate">
+    <p><span>RS</span> <span>149</span></p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div>
+                            <div class="tiffen-card-1" >
+                                <div class="tiffen-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="tiffen-card-con">
+<h3>Burger Burger</h3>
+<div class="tiffen-card-rate">
+    <p><span>RS</span> <span>149</span></p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lunch-sec" name="LUNCH">
+                    <div class="lunch-sec-margin">
+                        <div class="lunch-food-list">
+                            <ul>
+                                <li class="active">SOUP</li>
+                                <li>STARTER</li>
+                                <li>MAIN DISH</li>
+                                <li>SIDE DISH</li>
+                                <li>JUICE</li>
+                        
+                            </ul>
+                        </div>
+                        <div class="lunch-sub-list">
+                            <ul>
+                                <li>SOUP</li>
+                                <li>STARTER</li>
+                                <li>MAIN DISH</li>
+                                <li>SIDE DISH</li>
+                                <li>JUICE</li>
+                            </ul>
+                        </div>
+                   
+                        <div class="lunch-flexbox">
+                            <!-- <div class="lunch-card-1" >
+                                <div class="lunch-card-img">
+<img src="images/img1.jpg">
+                                </div>
+                                <div class="lunch-card-con">
+<h3>Burger Burger</h3>
+<div class="lunch-card-rate">
+    <p>149</p>
+    <p>11 items</p>
+</div>
+                                </div>
+                            </div> -->
+                        </div>
+           
+                    </div>
+                </div>
+                <div class="dinner-sec" name="SUMMARY">
+                    <div class="sec-right-margin">
+                        <h3>Order Summary</h3>
+                        <select>
+                            <option>SELECT TABLE</option>
+                            <option>TABLE 1</option>
+                            <option>TABLE 2</option>
+                            <option>TABLE 3</option>
+                            <option>TABLE 4</option>
+                            <option>TABLE 5</option>
+                        </select>
+                        <ul>
+                            <li>
+                                <p>Bill No : AFX1200</p>
+                                <p>Date : <span>22/12/2022</span> <span>4:00 AM</span></p>
+                            </li>
+                            <li><p>Table No : <span>2</span></p>
+                            <p>waiter Name : <span>Rahul</span></p></li>
+                        </ul>
+                        <div class="summary-list-margin">
+                        <div class="summary-list">
+                            <div class="summary-list-heading">
+                                <ul>
+                                    <li>S.NO</li>
+                                    <li>Item Name</li>
+                                    <li>Qty</li>
+                                    <li>Price</li>
+                                    <li>Total</li>
+                                </ul>
+                            </div>
+                            <div class="summary-update-list">
+                                <ul class="summary-list-update-parent">
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-total-section">
+                        <ul>
+                            <li>
+                                <p>Total</p>
+                                <p id="price">0</p>
+                            </li>
+                            <li>
+                                <p>Tax (12%)</p>
+                                <p id="taxPrice">0</p>
+                            </li>
+                            <li>
+                                <p>Total Amount</p>
+                                <p id="totalPrice">0</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="summary-button">
+                        <button>
+                            Sent Order
+                        </button>
+                        <button>
+                            take print
+                        </button>
+                        <button class="take-bill">Take Bill</button>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="sec-right">
+            <div class="sec-right-margin active">
+            <h3>Order Summary</h3>
+            <select>
+                <option>SELECT TABLE</option>
+                <option>TABLE 1</option>
+                <option>TABLE 2</option>
+                <option>TABLE 3</option>
+                <option>TABLE 4</option>
+                <option>TABLE 5</option>
+            </select>
+            <ul>
+                <li>
+                    <p>Bill No : AFX1200</p>
+                    <p>Date : <span>22/12/2022</span> <span>4:00 AM</span></p>
+                </li>
+                <li><p>Table No : <span>2</span></p>
+                <p>waiter Name : <span>Rahul</span></p></li>
+            </ul>
+            <div class="summary-list-margin">
+            <div class="summary-list">
+                <div class="summary-list-heading">
+                    <ul>
+                        <li>S.NO</li>
+                        <li>Item Name</li>
+                        <li>Qty</li>
+                        <li>Price</li>
+                        <li>Total</li>
+                    </ul>
+                </div>
+                <div class="summary-update-list">
+                    <ul class="summary-list-update-parent">
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="summary-total-section">
+            <ul>
+                <li>
+                    <p>Total</p>
+                    <p id="price">0</p>
+                </li>
+                <li>
+                    <p>Tax (12%)</p>
+                    <p id="taxPrice">0</p>
+                </li>
+                <li>
+                    <p>Total Amount</p>
+                    <p id="totalPrice">0</p>
+                </li>
+            </ul>
+        </div>
+        <div class="summary-button">
+            <button>
+                Sent Order
+            </button>
+            <button>
+                take print
+            </button>
+            <button class="take-bill">Take Bill</button>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
